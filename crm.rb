@@ -1,4 +1,4 @@
-require_relative 'contact'
+# require_relative 'contact'
 require 'sinatra'
 
 get '/' do
@@ -17,6 +17,6 @@ get 'about' do
   erb :about
 end
 
-after do
-  ActiveRecord::Base.connection.close
-end
+# after do
+#   # ActiveRecord::Base.connection.close
+# end
