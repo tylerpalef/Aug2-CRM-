@@ -1,0 +1,30 @@
+<h1>Contacts</h1>
+<hr>
+
+<br>
+<ul>
+  <% @first_name.each do |first| %>
+    <li> <%= first %> </li>
+  <% end %>
+</ul>
+<hr>
+
+<ul>
+  <% @last.each do |last| %>
+    <li> <%= last %> </li>
+  <% end %>
+</ul>
+<hr>
+
+<ul>
+  <% @email.each do |email_info| %>
+    <li> <%= email_info %> </li>
+  <% end %>
+</ul>
+<hr>
+
+<ul>
+  <% @notes.each do |note| %>
+    <li> <%= note %> </li>
+  <% end %>
+</ul>
