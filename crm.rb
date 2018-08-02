@@ -1,5 +1,7 @@
 # require_relative 'contact'
+# Need to add contact
 require 'sinatra'
+# require active Record
 
 get '/' do
   erb :index
@@ -17,6 +19,6 @@ get 'about' do
   erb :about
 end
 
-# after do
-#   # ActiveRecord::Base.connection.close
-# end
+after do
+  # ActiveRecord::Base.connection.close
+end
